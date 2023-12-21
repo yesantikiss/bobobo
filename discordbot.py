@@ -3,7 +3,8 @@ import discord
 from discord import app_commands
 import random
 import json
-token = "MTE4NTAxODk2ODYxMjgxMDc4Mw.G691Ux.L0Uj_gpjWdbKufGtfxaxKNdjUlHk-FacN3UQfk"
+import os
+token = os.getenv("DISCORD_TOKEN")
 # 接続に必要なオブジェクトを生成
 intents = discord.Intents.all()
 client = discord.Client(intents = intents)
